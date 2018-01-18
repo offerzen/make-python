@@ -33,11 +33,7 @@ def handle_event(event, client, bot_id):
 
     response = run_command(event['text'])
 
-    client.api_call(
-        "chat.postMessage",
-        channel=event['channel'],
-        text=response or DEFAULT_RESPONSE,
-        as_user=True)
+    client.rtm_send_message(event['channel'], response)
 
 
 
