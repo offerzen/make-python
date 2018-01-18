@@ -11,7 +11,7 @@ class RootException(Exception):
 
 
 def list_gadget_models():
-    result = requests.get(f"{BASE_URL}/gadgets/models", auth=(ROOT_APP_ID, ROOT_APP_SECRET))
+    result = requests.get("%s/gadgets/models" % BASE_URL, auth=(ROOT_APP_ID, ROOT_APP_SECRET))
     if result.status_code == 200:
         return result.json()
     else:
