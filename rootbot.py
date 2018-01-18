@@ -33,4 +33,5 @@ def get_phone_value(message, phone):
         response = "The value of a %s is R%.2f" % (phone, matching_phones[0]['value']/100)
     except root.RootException:
         response = "An error occurred. Please try again."
+
     return response

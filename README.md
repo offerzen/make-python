@@ -10,7 +10,7 @@ The example app was developed using Python 3.6 but should work with all versions
 
 We recommend using an environment manager to set up an isolated python environment for this app. We use [virtualenv](https://virtualenv.pypa.io/en/stable/) but others will also do (`conda`, if you're using an anacondas python installation).
 
-The examples below are for `virtualenv` on a but shouldn't be too different for other operating systems(unless you're using Windows - then you're on your own) and environment managers.
+The examples below are for `virtualenv` on a but shouldn't be too different for other operating systems (unless you're using Windows - then you're on your own) and environment managers.
 
 #### Clone the repo
 ```sh
