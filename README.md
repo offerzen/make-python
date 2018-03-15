@@ -21,7 +21,7 @@ $ cd make-python
 #### Set up and activate your environment
 ```sh
 $ virtualenv -p /usr/local/bin/python3 make-python
-$ source  source make-python/bin/activate
+$ source make-python/bin/activate
 ```
 
 #### Install the requirements
@@ -30,13 +30,35 @@ $ pip install -r requirements.txt
 ```
 
 #### Set up the environment variables
-The following environment variables are required by the app:
+
+Settings are in the settings/settings.py file
+
+`SLACK_API_TOKEN`: Your slackbot's API token
+
+`SANDBOX`: SANDBOX Yes/No aka NO is live!!
+
+`ROOT_APP_ID`: Your Root app ID
+
+`ROOT_APP_SECRET`: Your Root app's api key/ secret key
+
+The following environment variables are optional for the app:
 
 `SLACK_API_TOKEN`: Your slackbot's API token
 
 `ROOT_APP_ID`: Your Root app's id
 
 `ROOT_APP_SECRET`: Your root app's secret key
+
+### Sandbox auth
+
+Sandbox auth requires basic auth in the format username(apikey):password("") ex: "sandbox_apikey: "
+### TODO
+
+* Generic Root Request method
+* Break out api endpoints into classes
+* RootException on requests
+* Break out project into proper module structure
+* setup.py for lib install
 
 #### Run the app
 ```sh
