@@ -1,15 +1,15 @@
-***REMOVED***
-***REMOVED***
+# Global Settings for project rather than env vars
+# Leave variables empty if you want to use env variables
 
-***REMOVED***
+SANDBOX = True
 
-***REMOVED***
-***REMOVED***
+SANDBOX_URL = "https://sandbox.root.co.za/v1/insurance"
+PROD_URL = "https://api.root.co.za/v1/insurance"
     
-***REMOVED***
+BASE_URL = SANDBOX_URL if SANDBOX else PROD_URL
 
-***REMOVED***
-***REMOVED***
+API_KEY = "__Replace__"
+API_ID = "__Replace__"
 
-***REMOVED***
-***REMOVED***
+ROOT_APP_SECRET = "" if SANDBOX else API_KEY
+ROOT_APP_ID = API_KEY if SANDBOX else API_ID 

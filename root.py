@@ -2,8 +2,6 @@ import os
 import requests
 from settings import settings
 from requests.auth import HTTPBasicAuth
-#***REMOVED***
-***REMOVED***
 
 BASE_URL = settings.BASE_URL
 ROOT_APP_ID = settings.ROOT_APP_ID or os.environ.get('ROOT_APP_ID')
