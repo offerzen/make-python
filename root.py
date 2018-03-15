@@ -20,9 +20,6 @@ def list_gadget_models():
                                              ROOT_APP_SECRET
                                              )
                           )
-    print(HTTPBasicAuth(ROOT_APP_ID,ROOT_APP_SECRET).__dict__)
-    print(result.status_code)
-    print(result)
     if result.status_code == 200:
         return result.json()
     else:
