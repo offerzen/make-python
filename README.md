@@ -49,6 +49,14 @@ The following environment variables are optional for the app:
 
 `ROOT_APP_SECRET`: Your root app's secret key
 
+#### Running the tests
+
+The tests are still red at the moment (unless the settings file is updated).
+
+```sh
+$ pytest
+```
+
 ### Sandbox auth
 
 Sandbox auth requires basic auth in the format username(apikey):password("") ex: "sandbox_apikey: "
@@ -59,6 +67,7 @@ Sandbox auth requires basic auth in the format username(apikey):password("") ex:
 * RootException on requests
 * Break out project into proper module structure
 * setup.py for lib install
+* Mock web requests in tests
 
 #### Run the app
 ```sh
