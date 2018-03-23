@@ -9,5 +9,5 @@ def test_list_gadget_models():
     assert len(gadgets) > 0
     # Tests for any Apple Products
     assert any(['Apple' in x['make'] for x in gadgets])
-    # Test should have at least one iPhone or more in test_list_gadget_models    
+    # Test should have at least one iPhone or more in test_list_gadget_models
     assert any(['iPhone' in x['name'] for x in gadgets])
