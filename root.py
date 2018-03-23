@@ -13,8 +13,8 @@ class RootException(Exception):
 
 
 def list_gadget_models():
-    result = requests.get("%s/gadgets/models" % BASE_URL, 
-                          auth=HTTPBasicAuth(ROOT_APP_ID, 
+    result = requests.get("%s/gadgets/models" % BASE_URL,
+                          auth=HTTPBasicAuth(ROOT_APP_ID,
                                              ROOT_APP_SECRET
                                              )
                           )
